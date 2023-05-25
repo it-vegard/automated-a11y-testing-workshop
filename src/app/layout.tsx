@@ -1,3 +1,4 @@
+import "./global.css";
 import "@navikt/ds-css";
 import styles from "./layout.module.css";
 import { Inter } from 'next/font/google'
