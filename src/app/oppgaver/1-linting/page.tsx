@@ -33,6 +33,12 @@ export default function Oppgave1() {
                     Legg til en alternativ tekst, og se at feilmeldingen forsvinner.
                 </BodyShort>
             </TaskStep>
+            <TaskStep>
+                <Heading size="medium" level="2">Oppsummering</Heading>
+                Linting hjelper oss med å raskt se mangler i koden vår. 
+                Samtidig er reglene ofte avhengig av å sjekke native html-elementer, og vil dermed ikke evaluere tredjeparts React-komponenter.
+                De samme reglene vil testes i seinere oppgaver, men jo tidligere vi fanger feilene, jo mer tid sparer vi.
+            </TaskStep>
             <ButtonRow>
                 <ButtonStyledLink href="/" text="Tilbake til forsiden" variant="secondary" />
                 <ButtonStyledLink href="/oppgaver/2-enhetstesting" text="Fortsett til oppgave 2: Enhetstesting" />
