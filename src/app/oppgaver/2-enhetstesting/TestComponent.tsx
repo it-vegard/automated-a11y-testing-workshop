@@ -1,5 +1,7 @@
+import React from "react";
+
 export default function TestComponent() {
     return (
-        <button role="button" aria-pressed="false">Toggle button</button>
+        <button aria-pressed="false">Toggle button</button>
     )
 }
