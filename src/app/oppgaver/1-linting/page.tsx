@@ -35,9 +35,11 @@ export default function Oppgave1() {
             </TaskStep>
             <TaskStep>
                 <Heading size="medium" level="2">Oppsummering</Heading>
-                Linting hjelper oss med å raskt se mangler i koden vår. 
-                Samtidig er reglene ofte avhengig av å sjekke native html-elementer, og vil dermed ikke evaluere tredjeparts React-komponenter.
-                De samme reglene vil testes i seinere oppgaver, men jo tidligere vi fanger feilene, jo mer tid sparer vi.
+                <BodyShort>
+                    Linting hjelper oss med å raskt se mangler i koden vår. 
+                    Samtidig er reglene ofte avhengig av å sjekke native html-elementer, og vil dermed ikke evaluere tredjeparts React-komponenter.
+                    De samme reglene vil testes i seinere oppgaver, men jo tidligere vi fanger feilene, jo mer tid sparer vi.
+                </BodyShort>
             </TaskStep>
             <ButtonRow>
                 <ButtonStyledLink href="/" text="Tilbake til forsiden" variant="secondary" />
