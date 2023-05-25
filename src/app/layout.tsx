@@ -1,4 +1,4 @@
-import './globals.css'
+import "@navikt/ds-css";
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -15,6 +15,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+      <link
+        rel="preload"
+        href="https://cdn.nav.no/aksel/fonts/SourceSans3-normal.woff2"
+        as="font"
+        type="font/woff2"
+        crossOrigin="anonymous"
+      />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
