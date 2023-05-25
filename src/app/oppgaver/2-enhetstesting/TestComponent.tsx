@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function TestComponent() {
+    const [pushed, setPushed] = useState(false)
     return (
-        <button aria-pressed="bullshit">Toggle button</button>
+        <a href="#" aria-pressed={pushed} onClick={() => setPushed(!pushed)}>Toggle button</a>
     )
 }
