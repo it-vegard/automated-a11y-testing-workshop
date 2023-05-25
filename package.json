@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@navikt/ds-css": "^3.2.4",
+    "@navikt/ds-icons": "^3.2.4",
     "@navikt/ds-react": "^3.2.4",
     "@types/node": "20.2.3",
     "@types/react": "18.2.6",

@@ -2,8 +2,6 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main>
-      Hjem
-    </main>
+    <h1>Velkommen til workshop i automatisert uu-testing!</h1>
   )
 }
