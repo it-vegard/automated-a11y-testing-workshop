@@ -16,7 +16,7 @@ describe("My first test", () => {
     //console.log("Results", results);
     expect(results).toHaveNoViolations();
 
-    await screen.findByRole("button");
+    //await screen.findByRole("button");
 
     const button = await screen.findByRole("button", {
       name: "Toggle button",
