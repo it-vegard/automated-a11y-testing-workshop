@@ -1,12 +1,13 @@
-code, pre {
-    background-color: #434343;
-    color: #fefefe;
-    border-radius: 3px;
-    border: 1px solid #999;
-    padding: 2px 4px;
+code,
+pre {
+  background-color: #434343;
+  color: #fefefe;
+  border-radius: 3px;
+  border: 1px solid #999;
+  padding: 2px 4px;
 }
 
 pre {
-    line-break: auto;
-    height: auto;
+  line-break: auto;
+  height: auto;
 }

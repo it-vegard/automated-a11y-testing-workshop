@@ -1,6 +1,6 @@
 .button-row {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-top: 2rem;
 }
