@@ -6,6 +6,10 @@ import { BodyShort, Button, Heading } from "@navikt/ds-react";
 import ButtonRow from "../ButtonRow";
 import TaskStep from "../TaskStep";
 
+const MyImage = ({ alt, src }: { alt?: string; src: string }) => (
+  <img alt={alt} src={src} />
+);
+
 export default function Oppgave1() {
   return (
     <>
@@ -44,6 +48,25 @@ export default function Oppgave1() {
         <BodyShort>
           <div style={{ margin: "1rem 0" }}>
             <img src="https://www.nav.no/dekoratoren/media/nav-logo-red.svg?ts=1" />
+            <MyImage src="https://www.nav.no/dekoratoren/media/nav-logo-red.svg?ts=1" />
+            <MyImage
+              src="https://www.nav.no/dekoratoren/media/nav-logo-red.svg?ts=1"
+              alt="Image of NAV logo"
+            />
+            <img
+              src="https://www.nav.no/dekoratoren/media/nav-logo-red.svg?ts=1"
+              alt="Image of NAV's logo"
+            />
+            <img
+              src="https://www.nav.no/dekoratoren/media/nav-logo-red.svg?ts=1"
+              alt="Bilde av NAV sin logo"
+            />
+          </div>
+          <form>
+            <label>Label for input without label</label>
+            <input type="text" name="input-without-label" />
+          </form>
+          <a onClick={() => (window.location.href = "www.nav.no")}>My link</a>
           Sjekk i <code>src/app/oppgaver/1-linting/page.tsx</code>, sjekk at
           img-taggen for NAV-logoen klager over manglende alternativ tekst. Legg
           til en alternativ tekst, og se at feilmeldingen forsvinner.
