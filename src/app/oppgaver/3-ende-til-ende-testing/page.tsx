@@ -3,6 +3,8 @@
 import { Heading } from "@navikt/ds-react";
 import ButtonRow from "../ButtonRow";
 import ButtonStyledLink from "@/app/ButtonStyledLink";
+import styles from "./page.module.css";
+import Container from "./Container";
 
 export default function Oppgave1() {
   return (
@@ -17,6 +19,14 @@ export default function Oppgave1() {
           variant="secondary"
         />
       </ButtonRow>
+      <p className={styles.containerText}>
+        Denne teksten validerer mot hvit bakgrunn
+      </p>
+      <Container>
+        <p className={styles.containerText}>
+          Denne teksten validerer ikke mot mørkere bakgrunn
+        </p>
+      </Container>
     </>
   );
 }
