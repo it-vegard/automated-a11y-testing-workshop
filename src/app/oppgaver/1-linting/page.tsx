@@ -1,24 +1,14 @@
 "use client";
 
 import ButtonStyledLink from "@/app/ButtonStyledLink";
-import {Accordion, BodyShort, Button, Heading} from "@navikt/ds-react";
+import {Accordion, BodyShort, Heading} from "@navikt/ds-react";
+import AccordionItem from "../AccordionItem";
 import ButtonRow from "../ButtonRow";
 import TaskStep from "../TaskStep";
 import FormsExample from "./examples/forms";
 import LinksExample from "./examples/links";
 import ImagesExample from "./examples/images";
 import styles from "./examples/examples.module.css";
-
-const AccordionItem = ({ children, header }) => (
-    <Accordion.Item>
-      <Accordion.Header>
-        {header}
-      </Accordion.Header>
-      <Accordion.Content>
-        {children}
-      </Accordion.Content>
-    </Accordion.Item>
-)
 
 export default function Oppgave1() {
   return (
