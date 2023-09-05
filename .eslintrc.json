@@ -4,6 +4,7 @@
     "jsx-a11y"
   ],
   "rules": {
+    "@next/next/no-img-element": 0,
     "jsx-a11y/img-redundant-alt": [
       2,
       {
