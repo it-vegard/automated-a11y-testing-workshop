@@ -1,0 +1,8 @@
+.Label, .TextInput {
+    display: block;
+    margin: 0.25rem;
+}
+
+.SpacingBottom {
+    margin-bottom: 1rem;
+}

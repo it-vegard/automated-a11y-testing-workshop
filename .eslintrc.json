@@ -9,12 +9,12 @@
       2,
       {
         "components": [ "MyImage" ],
-        "words": [ "Bilde", "Illustrasjon", "Foto" ]
+        "words": []
       }],
     "jsx-a11y/alt-text": [
       2,
       {
-        "img": [ "MyImage" ]
+        "img": []
       }]
   }
 }

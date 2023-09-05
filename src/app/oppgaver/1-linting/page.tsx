@@ -1,97 +1,90 @@
 "use client";
 
 import ButtonStyledLink from "@/app/ButtonStyledLink";
-import { BodyShort, Button, Heading } from "@navikt/ds-react";
+import {Accordion, BodyShort, Button, Heading} from "@navikt/ds-react";
 import ButtonRow from "../ButtonRow";
 import TaskStep from "../TaskStep";
+import FormsExample from "./examples/forms";
+import LinksExample from "./examples/links";
+import ImagesExample from "./examples/images";
+import styles from "./examples/examples.module.css";
 
-const MyImage = ({ alt, src }: { alt?: string; src: string }) => (
-  <img alt={alt} src={src} />
-);
+const AccordionItem = ({ children, header }) => (
+    <Accordion.Item>
+      <Accordion.Header>
+        {header}
+      </Accordion.Header>
+      <Accordion.Content>
+        {children}
+      </Accordion.Content>
+    </Accordion.Item>
+)
 
 export default function Oppgave1() {
   return (
     <>
       <Heading level="1" size="large">
-        Oppgave 1: Linting
+        Task 1: Linting
       </Heading>
       <TaskStep>
         <BodyShort>
-          I denne oppgaven skal vi lære om linting av universell utforming.
-          <br /> Vi baserer oss på eslint-pakken
-          &quot;eslint-plugin-jsx-a11y&quot;.
+          The first level of automatic testing for accessibility is linting. That is static code-checking which reports errors directly in your IDE.
+          We will use ESLint with the popular plugin <code>eslint-plugin-jsx-a11y</code>.
         </BodyShort>
       </TaskStep>
       <TaskStep>
         <Heading size="medium" level="2">
-          Steg 1
+          Prerequisites
         </Heading>
         <BodyShort>
-          Installer eslint-plugin-jsx-a11y:{" "}
-          <code>npm install eslint-plugin-jsx-a11y --save-dev</code>
+          Both ESLint and the &quot;jsx-a11y&quot;-plugin have been pre-installed in this repo.
+          But you should check that you have your IDE set up to support ESLint as well.
+        </BodyShort>
+        <BodyShort spacing>
+          In Visual Studio Code, you should install the &quot;ESLint&quot; extension. <br/>
+          In IntelliJ/Webstorm should probably just need to activate ESLint in the IDEA through <code>Settings &gt; Languages & Frameworks &gt; JavaScript &gt; Code Quality Tools &gt; ESLint</code> (select &quot;Automatic ESLint configuration&quot;).
         </BodyShort>
       </TaskStep>
       <TaskStep>
         <Heading size="medium" level="2">
-          Steg 2
+          Tasks
         </Heading>
-        <BodyShort>
-          I <code>.eslintrc</code>, legg til{" "}
-          <code>&quot;plugins&quot;: [&quot;jsx-a11y&quot;]</code>.
-        </BodyShort>
+        <Accordion className={styles.SpacingBottom}>
+          <AccordionItem header="Images">
+            <ImagesExample />
+          </AccordionItem>
+          <AccordionItem header="Forms">
+            <FormsExample />
+          </AccordionItem>
+          <AccordionItem header="Links">
+            <LinksExample />
+          </AccordionItem>
+        </Accordion>
       </TaskStep>
       <TaskStep>
         <Heading size="medium" level="2">
-          Steg 3
+          Summary
         </Heading>
         <BodyShort>
-          <div style={{ margin: "1rem 0" }}>
-            <img src="https://www.nav.no/dekoratoren/media/nav-logo-red.svg?ts=1" />
-            <MyImage src="https://www.nav.no/dekoratoren/media/nav-logo-red.svg?ts=1" />
-            <MyImage
-              src="https://www.nav.no/dekoratoren/media/nav-logo-red.svg?ts=1"
-              alt="Image of NAV logo"
-            />
-            <img
-              src="https://www.nav.no/dekoratoren/media/nav-logo-red.svg?ts=1"
-              alt="Image of NAV's logo"
-            />
-            <img
-              src="https://www.nav.no/dekoratoren/media/nav-logo-red.svg?ts=1"
-              alt="Bilde av NAV sin logo"
-            />
-          </div>
-          <form>
-            <label>Label for input without label</label>
-            <input type="text" name="input-without-label" />
-          </form>
-          <a onClick={() => (window.location.href = "www.nav.no")}>My link</a>
-          Sjekk i <code>src/app/oppgaver/1-linting/page.tsx</code>, sjekk at
-          img-taggen for NAV-logoen klager over manglende alternativ tekst. Legg
-          til en alternativ tekst, og se at feilmeldingen forsvinner.
+          Linting is a low-cost and quick feedback mechanism to check for common accessibility bugs.
+          Although the examples in this task may seem &quot;obvious&quot;, they also frequent the top-10 most common bugs found world-wide.
         </BodyShort>
-      </TaskStep>
-      <TaskStep>
-        <Heading size="medium" level="2">
-          Oppsummering
-        </Heading>
         <BodyShort>
-          Linting hjelper oss med å raskt se mangler i koden vår. Samtidig er
-          reglene ofte avhengig av å sjekke native html-elementer, og vil dermed
-          ikke evaluere tredjeparts React-komponenter. De samme reglene vil
-          testes i seinere oppgaver, men jo tidligere vi fanger feilene, jo mer
-          tid sparer vi.
+          However, it will only check static code, which does not account for state, conditional rendering, composed views, etc.
+          The linter also usually work only on native HTML, and we have to &quot;help&quot; it to check custom components.
+          Finally, since linting only checks static code, it will not find contrast issues and other visual accessibility issues.
+          For that, we need to test the rendered DOM, which we will begin in the next task.
         </BodyShort>
       </TaskStep>
       <ButtonRow>
         <ButtonStyledLink
           href="/"
-          text="Tilbake til forsiden"
+          text="Back to Home"
           variant="secondary"
         />
         <ButtonStyledLink
           href="/oppgaver/2-enhetstesting"
-          text="Fortsett til oppgave 2: Enhetstesting"
+          text="Continue to task 2: Unit testing"
         />
       </ButtonRow>
     </>
