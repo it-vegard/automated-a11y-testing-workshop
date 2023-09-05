@@ -2,7 +2,7 @@ import "./global.css";
 import "@navikt/ds-css";
 import styles from "./layout.module.css";
 import { Inter } from "next/font/google";
-import MainHeader from "./MainHeader";
+import MainHeader from "./components/main-header/MainHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
