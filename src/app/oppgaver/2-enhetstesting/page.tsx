@@ -51,7 +51,7 @@ export default function Oppgave2() {
             <BodyShort spacing>
               For this first task, look up <code>ToggleButton.text.tsx</code>.
               In the first test (&quot;renders correctly&quot;), use the findByRole function to look up the ToggleButton component, and check that it exists.
-              If you are unsure how to use findByRole, have a look in the <a href="#documentation">documentation</a>.
+              If you are unsure how to use findByRole, have a look in the <a href="https://testing-library.com/docs/dom-testing-library/cheatsheet/#queries">documentation</a>.
             </BodyShort>
           </AccordionItem>
           <AccordionItem header="findByRole with accessible name">
