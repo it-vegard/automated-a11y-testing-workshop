@@ -34,7 +34,7 @@ export default function Oppgave2() {
       </TaskStep>
       <TaskStep>
         <Heading size="medium" level="2" spacing>
-          Task 1: React Testing Library
+          React Testing Library
         </Heading>
         <Accordion>
           <AccordionItem header="findByRole">

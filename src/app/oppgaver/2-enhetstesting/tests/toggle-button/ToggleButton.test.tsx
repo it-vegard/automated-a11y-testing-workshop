@@ -11,8 +11,8 @@ expect.extend(toHaveNoViolations);
 describe("ToggleButton", () => {
   it("renders correctly", async () => {
     const { findByRole } = render(<ToggleButton text="Toggle Button" />);
-    const button = await findByRole("button");
-    expect(button).toBeInTheDocument();
+
+    /* Task 1 */
   })
 
   it("works atomically, allowing more than one to be used simultaneously", async () => {
@@ -22,15 +22,7 @@ describe("ToggleButton", () => {
       <ToggleButton text="Toggle 2" />
     </>);
 
-    const toggle1 = await findByRole("button", {
-      name: "Toggle 1"
-    });
-    const toggle2 = await findByRole("button", {
-      name: "Toggle 2"
-    });
-    fireEvent.click(toggle1);
-    expect(toggle1.getAttribute("aria-pressed")).toBe("true");
-    expect(toggle2.getAttribute("aria-pressed")).toBe("false");
+   /* Task 2 */
   });
 
   it("correctly sets [pressed] state", async () => {
@@ -41,16 +33,7 @@ describe("ToggleButton", () => {
     </>);
 
 
-    const toggleButtonBeforePressingIt = await findByRole("button", {
-      name: "Toggle 1",
-      pressed: false,
-    });
-    fireEvent.click(toggleButtonBeforePressingIt);
-    const toggleButtonAfterPressingIt = await findByRole("button", {
-      name: "Toggle 1",
-      pressed: true,
-    });
-    expect(toggleButtonAfterPressingIt).toBeInTheDocument();
+    /* Task 3 */
   });
 
   it("is accessible", async () => {
@@ -60,21 +43,6 @@ describe("ToggleButton", () => {
         <ToggleButton text="Toggle 2" />
       </>);
   
-      expect(await axe(container)).toHaveNoViolations();
-  
-      const toggleButtonBeforePressingIt = await findByRole("button", {
-        name: "Toggle 1",
-        pressed: false,
-      });
-      fireEvent.click(toggleButtonBeforePressingIt);
-      expect(await axe(container)).toHaveNoViolations();
-
-      const toggleButtonAfterPressingIt = await findByRole("button", {
-        name: "Toggle 1",
-        pressed: true,
-      });
-      expect(toggleButtonAfterPressingIt).toBeInTheDocument()
-  
-      expect(await axe(container)).toHaveNoViolations();
+      /* Task 4 */
   })
 });
