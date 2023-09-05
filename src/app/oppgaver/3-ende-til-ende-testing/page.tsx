@@ -10,21 +10,21 @@ export default function Oppgave1() {
   return (
     <>
       <Heading level="1" size="large">
-        Oppgave 3: Ende-til-ende-testing
+        Task 3: End-to-end testing
       </Heading>
       <ButtonRow>
         <ButtonStyledLink
           href="/oppgaver/2-enhetstesting"
-          text="Tilbake til oppgave 2: Enhetstesting"
+          text="Back to task 2: Unit testing"
           variant="secondary"
         />
       </ButtonRow>
       <p className={styles.containerText}>
-        Denne teksten validerer mot hvit bakgrunn
+        This text validates against a white background.
       </p>
       <Container>
         <p className={styles.containerText}>
-          Denne teksten validerer ikke mot mørkere bakgrunn
+          This text does not validate against a dark background.
         </p>
       </Container>
     </>

@@ -98,12 +98,12 @@ export default function Oppgave2() {
       <ButtonRow>
         <ButtonStyledLink
           href="/oppgaver/1-linting"
-          text="Tilbake til oppgave 1: Linting"
+          text="Back to task 1: Linting"
           variant="secondary"
         />
         <ButtonStyledLink
           href="/oppgaver/3-ende-til-ende-testing"
-          text="Fortsett til oppgave 3: Ende-til-ende-testing"
+          text="Continue to task 3: End-to-end testing"
         />
       </ButtonRow>
     </>
