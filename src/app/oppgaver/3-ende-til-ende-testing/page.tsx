@@ -5,6 +5,7 @@ import ButtonRow from "../ButtonRow";
 import ButtonStyledLink from "@/app/ButtonStyledLink";
 import styles from "./page.module.css";
 import Container from "./Container";
+import Form from "./components/Form";
 
 export default function Oppgave1() {
   return (
@@ -27,6 +28,7 @@ export default function Oppgave1() {
           This text does not validate against a dark background.
         </p>
       </Container>
+      <Form />
     </>
   );
 }
