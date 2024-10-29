@@ -13,25 +13,26 @@ describe("ToggleButton", () => {
     const { findByRole } = render(<ToggleButton text="Toggle Button" />);
 
     /* Task 1 */
-  })
+  });
 
   it("works atomically, allowing more than one to be used simultaneously", async () => {
     const { findByRole } = render(
-    <>
-      <ToggleButton text="Toggle 1" />
-      <ToggleButton text="Toggle 2" />
-    </>);
+      <>
+        <ToggleButton text="Toggle 1" />
+        <ToggleButton text="Toggle 2" />
+      </>
+    );
 
-   /* Task 2 */
+    /* Task 2 */
   });
 
   it("correctly sets [pressed] state", async () => {
     const { findByRole } = render(
-    <>
-      <ToggleButton text="Toggle 1" />
-      <ToggleButton text="Toggle 2" />
-    </>);
-
+      <>
+        <ToggleButton text="Toggle 1" />
+        <ToggleButton text="Toggle 2" />
+      </>
+    );
 
     /* Task 3 */
   });
@@ -41,8 +42,9 @@ describe("ToggleButton", () => {
       <>
         <ToggleButton text="Toggle 1" />
         <ToggleButton text="Toggle 2" />
-      </>);
-  
-      /* Task 4 */
-  })
+      </>
+    );
+
+    /* Task 4 */
+  });
 });

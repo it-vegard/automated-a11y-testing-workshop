@@ -1,33 +1,33 @@
 .Menu {
-    position: relative;
+  position: relative;
 }
 
 .MenuOverlay {
-    background-color: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .MenuDropDown {
-    position: absolute;
-    right: 0;
-    top: 48px;
+  position: absolute;
+  right: 0;
+  top: 48px;
 
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 1.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
 
-    width: 25rem;
+  width: 25rem;
 }
 
 .MenuDropDown ul {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .MenuDropDown li {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }

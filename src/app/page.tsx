@@ -10,7 +10,8 @@ export default function Home() {
         Welcome to this workshop on automatic accessibility testing!
       </Heading>
       <BodyShort>
-        Today, we will learn three different methods of testing for accessibility.
+        Today, we will learn three different methods of testing for
+        accessibility.
       </BodyShort>
       <List>
         <List.Item>Linting</List.Item>
