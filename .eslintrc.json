@@ -1,20 +1,24 @@
 {
   "extends": ["next/core-web-vitals", "plugin:jsx-a11y/recommended"],
-  "plugins": [
-    "jsx-a11y"
+  "ignorePatterns": [
+    "**/oppgaver/2-enhetstesting",
+    "**/oppgaver/3-ende-til-ende-testing"
   ],
+  "plugins": ["jsx-a11y"],
   "rules": {
     "@next/next/no-img-element": 0,
     "jsx-a11y/img-redundant-alt": [
       2,
       {
-        "components": [ "MyImage" ],
+        "components": ["MyImage"],
         "words": []
-      }],
+      }
+    ],
     "jsx-a11y/alt-text": [
       2,
       {
         "img": []
-      }]
+      }
+    ]
   }
 }
