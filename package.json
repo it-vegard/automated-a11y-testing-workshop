@@ -12,6 +12,7 @@
     "test:e2e:ui": "playwright test --ui"
   },
   "dependencies": {
+    "@axe-core/playwright": "^4.10.1",
     "@navikt/ds-css": "^3.2.4",
     "@navikt/ds-icons": "^3.2.4",
     "@navikt/ds-react": "^3.2.4",
